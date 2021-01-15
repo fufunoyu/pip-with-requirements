@@ -13,7 +13,7 @@ script:
 after_success:
   #- bash <(curl -s -s https://scripts.scantist.com/ci-travis.sh)
   #- bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar.sh)
-  npm install -g snyk
-  snyk -v
-  snyk auth
-  snyk monitor
+  - npm install -g snyk
+  - snyk -v
+  - snyk auth
+  - snyk monitor
