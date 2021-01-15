@@ -14,5 +14,5 @@ after_success:
   #- bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar.sh)
   - npm install -g snyk
   - snyk -v
-  - snyk auth
+  - snyk auth $SNYK_TOKEN
   - snyk monitor
